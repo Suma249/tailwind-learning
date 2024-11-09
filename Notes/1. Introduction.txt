@@ -1,0 +1,27 @@
+1. css framework made up of utility classes, which makes it really easy to quickly start nice looking webpages
+2. much lower than bootstrap, materialized css, all these will give fully styled css components like buttons, cards etc.,
+   but taliwind does not do that, its much more low level and it gives us a ton of low level utility classes to make our own componnets
+3. ex if we want to make a card in tailwind, we will do something like  class='rounded shadow p-2 bg-white'
+4. with taikwid, we can make our won reusable components
+
+tailwind-css: 
+
+we can use tailwind on its own or we can use it as a plugin with post css
+
+how does tailwind actually work?
+when we use tailwind, we create a source file where we import all of the tailwind course styles and functionality and then we can also write our own
+css if we want to inside this src file using tailwind features and syntax as well 
+than we use tailwind to process that source file into vanilla css output file at build time with all of the final css rules inside it and then
+we can link to that css file from our html page
+than everytime we make some change to this src css file, we would have to run tailwind script to process that into a new output css file
+it might sound difficult, but with tailwind we mainly use utility classes inside the html file itself, so we only rarely have to change the src file
+i.e src css and then reprocess into the output file
+
+src folder: where source files will be stored 
+punlic folder: final output css is stored here after tailwind has processed it, and it can also contain html or may be ant front end javascript as well
+this public folder is what will be deployed to the webhost on the internet
+
+in src css file, we need to import the base functionality of tailwind, but addig @tailwind base, components and utilities
+
+in the package.json, add the script build-css or you can call it whatever we want
+build-css: "tailwindcss build src/styles.css -o public/styles.css"

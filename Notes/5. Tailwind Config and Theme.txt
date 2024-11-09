@@ -1,0 +1,27 @@
+when taileing processes our source css file it uses a deafult cofigurstion to do that under the hood
+
+this configuration dictates the values of peroperties controlled by different classes that we use in our html
+ex: text-sm would give a font size of 0.875rem or red-500 color should be a specific hex code etc.,
+
+we can also create our own tailwind config file to eithet extend those rules or  add extra classes for fonts or colrs or spacig or anthing else
+or to change the curent ones as well 
+
+npx tailwindcss init --full(creates a config fies with default valus)
+
+we can change the default styles that tailwind provides
+
+like in tailwind config file if we add a property mammoth:3px, for font-size prperty than afyer processing src styles.css we can use text-mammoth property
+like this we can cahneg adn add new pripertues, but it is not recommended to cahneg the default settings in tailwind config
+
+so fpr this, in tailwind config file w ehave a extend property for theme property,
+so in the extend property, we can add our custome propertis like
+colors:{
+  primary:"#FF6363",
+  secondary:{
+   100: "#E2E2DS",
+   200: "#888883"
+  }
+}
+rebuild the css and then apply the styles to the element in html
+
+vs code extension: tailwindcss intellisince

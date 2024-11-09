@@ -1,0 +1,5 @@
+we have seen how to make card and badge componenyt
+but if we wnat to make multiple such componnets it becoems as if we wnat to change anything we have to change on all those componets
+hence it would be better if we could extract the classes applie dfor card and badge componnet into external selector 
+for this in src styles.css file create a selector with some name let it be card
+if we want to apply the same classes that we have appie dfor card in html we can use directive called apply 

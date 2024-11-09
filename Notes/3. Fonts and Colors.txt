@@ -1,0 +1,5 @@
+tailwind gives us the huge amount of low level utility classes to style our elements and by level we mean that the classes only do one
+or two things for us like change the font color or size or padding etc., and instead of the class do the bunch of things for us to create some kind of styles components
+like a card or button which is kind of behavious which we nprmally get with something like bootstrap, so there is lots of low level classes we can use 
+
+use tailwind documentation to learn

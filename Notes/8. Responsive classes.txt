@@ -1,0 +1,8 @@
+normally when we are creating mobie designs we would use media queries in css to style things differently accordsing to system sizes
+
+in tailwind we dont have to do that, but we can just prefix tailwind classes with resposnive classes and then that class woud only apply to that screen size
+
+mobile first approach
+ex: class="flex justify-center md:justify-end", here first small screen justify-center property is appied which is first and if the screen is medium than jsutify -end is applied
+ex:
+text-green-500 sm:text-red-500 lg:text-blue-500 text-sm

@@ -1,0 +1,7 @@
+to make a webpage look like a structured on there are 2 ways
+1. flexbox
+2. css grid
+
+to make login and sgnup look like a flex
+
+eleents with parent css as flex-> clid elements will sit next to each other

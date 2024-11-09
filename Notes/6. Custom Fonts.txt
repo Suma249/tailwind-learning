@@ -1,0 +1,6 @@
+from google fonts, selects the styles and under embed section copy the import url
+and then paste it in src styles.css at te top
+in the tailwind config file add below property after colors
+fontFamily:{
+  body:["Nunito"]
+}
